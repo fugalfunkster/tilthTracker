@@ -7,42 +7,104 @@ Tilth Tracker
 
 
 * User Stories
-** App Content
-- New Test
-- Web form
-- Enter Measurements
-- View Recommendations
-- Explore Fertilizer Options
-- Application Notes
-- Saved Test
-- Modify Measurements
-- View Recommendations
-- Explore Fertilizer Options
-- Application Notes
-** App User Stories
-*** When I view the website on a desktop, laptop, tablet, or smart phone, I see a website that fits my device.
-**** I can create an account with my name, email adress, password, and (optional) address.
-**** I can reset my password or username if I forget them.
+** Whether I view the website on a desktop, laptop, tablet, or smart phone, I see a website that fits my device.
+*** At the home page
+**** I can create an account with a username, email adress, and a password
 **** I can login using my email and password.
-*** When I am logged in
-**** I can change my email-address.
+** When I am logged in
+*** I can modify my account information
+**** I can reset my password or username if I forget them
+**** I can change my email-address
 **** I can change my password.
-**** I can add my address (this information will not be shared and will improve recommendations)
-**** I can use the Soil Test App
-**** I can create a new soil test entry
-**** I can enter the measurements found on my soil test to recieve customized recommendations
-**** I can explore my fertilizer options in an interactive way
-**** I can add notes about what I applied
-**** I can view past soil tests and the corresponding measurements, recommendations, and applications
-**** If I am a wholesale customer, I can access the wholesale pricelist.
-*** I do not need to login to
-**** Visit the home page
-
+**** I can enable editing past records after being warned
+**** I can enable setting past dates for new records after being warned
+*** I can logout
+*** I see a weather forecast
+*** I see a list of my fields
+**** For each field entry
+***** I see my most recent crop record for each field
+***** I see a link to my most recent record for that field
+***** I see a link to past records for that field
+***** I see a button to enter a record for that field
+**** I can click on a particular field
+***** I see a component for the field's soil test history
+****** I can record a soil test
+******* The date of the soil test is automatically populated
+******** If my account settings permit it, I can modify the date
+******* I can enter the nutrient data
+******* I can enter other soil test details
+****** I can view a log of past tests
+******* I see a summary of the 5 most recent soil test entries
+******* I can view older soil test entries
+******* I can view a soil test entry
+******** I can see the numbers
+******** I can see a graph depicting nutrient sufficiency
+******** If my acount settings permit it, I can modify test data
+******* I can view recommendations
+******** I can view saved recommendations generated from the test
+******** I can generate alternate recommendations
+***** I see a component for the field's application history
+****** I can record an application
+******* The date of the application is automatically populated
+******** If my account settings permit it, I can modify the date
+******* I can enter information about an amendment
+******** I can select from a list of saved amendments
+******** I can enter a new amendment
+********* Name
+********* Weight
+********* Analysis
+******* I can enter other application details
+******** Method of Application
+********* Hand
+********* Machine
+******** Duration in Hours for Application
+******** Cost of Application?
+******** Notes
+****** I can view a log of past applications
+******* I see summary of the 5 most recent application entries
+******* I can inspect an application entry
+******** If my account settings permit it, I can modify test data
+******* I can view older application entries
+***** I see a component for the field's disturbance history
+****** I can record a disturbance
+****** I can view a log of past disturbances
+***** I see a component for the field's crop history
+****** I see a component for the current crop
+******* I see the crop information
+******* I see the last harvest
+******* I can record crop information
+******* I can record a harvest entry
+******* I can view a log of past harvests
+******** I see the last 5 harvests
+******** I can view older harvest entries
+******** I can view a harvest entry
+****** I can record a new crop
+******* I can enter crop information
+******** Crop Name
+******** Area
+******** Planting Date
+******* For each crop I can 
+******** Add a harvest
+********* 
+****** I can view a log of past crops
+******* I see a summary of the 5 most recent crop entries
+******* I can view a crop entry
+******** SEE USER STORY for "I see a component for the current crop"
+******* I can view older crop entries
+*** I can create a new field 
+**** What is the name of the field?
+**** Where is the field?
+**** What is it's aspect?
+**** Soil test History?
+**** Application History?
+**** Tillage History?
+**** Crop and Yield History
 
 * Labor Estimates [135h]
 
 | Phase              | Hours |
 |--------------------+-------|
+| User Stories       |    10 |
 | Recipe             |    15 |
 | Content Generation |    15 |
 | Business Logic     |    25 |
@@ -51,10 +113,25 @@ Tilth Tracker
 | UI Customization   |    25 |
 | Deployment         |    25 |
 |--------------------+-------|
-| Total              |   135 |
+| Total              |   145 |
 |--------------------+-------|
 
 
 * Design Recipe
+** Wireframes
+** Routing
+** Components
+** Data Models
+** API
+** Middleware
+** Controllers
+** Server Architecture
+
 
 * notes
+** features
+*** field map with canvass polygon grid
+*** data viz changes in nutrients over time
+*** integrate with NRCS Woil Web
+*** have an enterprise facing api, customers as a heading above fields but below account
+*** 
