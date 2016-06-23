@@ -1,0 +1,60 @@
+Tilth Tracker
+
+* TODO s
+** [X] Init repo
+** [ ] Flesh out readme
+** [ ] Write design Recipe
+
+
+* User Stories
+** App Content
+- New Test
+- Web form
+- Enter Measurements
+- View Recommendations
+- Explore Fertilizer Options
+- Application Notes
+- Saved Test
+- Modify Measurements
+- View Recommendations
+- Explore Fertilizer Options
+- Application Notes
+** App User Stories
+*** When I view the website on a desktop, laptop, tablet, or smart phone, I see a website that fits my device.
+**** I can create an account with my name, email adress, password, and (optional) address.
+**** I can reset my password or username if I forget them.
+**** I can login using my email and password.
+*** When I am logged in
+**** I can change my email-address.
+**** I can change my password.
+**** I can add my address (this information will not be shared and will improve recommendations)
+**** I can use the Soil Test App
+**** I can create a new soil test entry
+**** I can enter the measurements found on my soil test to recieve customized recommendations
+**** I can explore my fertilizer options in an interactive way
+**** I can add notes about what I applied
+**** I can view past soil tests and the corresponding measurements, recommendations, and applications
+**** If I am a wholesale customer, I can access the wholesale pricelist.
+*** I do not need to login to
+**** Visit the home page
+
+
+* Labor Estimates [135h]
+
+| Phase              | Hours |
+|--------------------+-------|
+| Recipe             |    15 |
+| Content Generation |    15 |
+| Business Logic     |    25 |
+| Routing            |    15 |
+| Database Wiring    |    15 |
+| UI Customization   |    25 |
+| Deployment         |    25 |
+|--------------------+-------|
+| Total              |   135 |
+|--------------------+-------|
+
+
+* Design Recipe
+
+* notes
