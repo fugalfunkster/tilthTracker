@@ -27,19 +27,44 @@ Tilth Tracker
 ***** I see a link to past records for that field
 ***** I see a button to enter a record for that field
 **** I can click on a particular field
-***** I see a component for the field's soil test history
+***** I see a component for the field's soil test & recommendation history
 ****** I can record a soil test
 ******* The date of the soil test is automatically populated
 ******** If my account settings permit it, I can modify the date
 ******* I can enter the nutrient data
+******** Organic Matter
+******** CEC
+********* pH
+********* SMP Buffer pH
+******** Cations
+********* Ca
+********* Mg
+********* K
+********* Na
+******** Anions
+********* N
+********* S
+******** Phosphorous
+******** Trace Nutrients
+********* B
+********* Zn
+********* Mn
+********* Fe
+********* Cu
+********* Cl
+********* Mo
+********* Co
 ******* I can enter other soil test details
+******** Sample ID
+******** Sample Taker
+******** Notes
 ****** I can view a log of past tests
 ******* I see a summary of the 5 most recent soil test entries
-******* I can view older soil test entries
 ******* I can view a soil test entry
 ******** I can see the numbers
 ******** I can see a graph depicting nutrient sufficiency
 ******** If my acount settings permit it, I can modify test data
+******* I can view older soil test entries
 ******* I can view recommendations
 ******** I can view saved recommendations generated from the test
 ******** I can generate alternate recommendations
@@ -68,7 +93,7 @@ Tilth Tracker
 ***** I see a component for the field's disturbance history
 ****** I can record a disturbance
 ****** I can view a log of past disturbances
-***** I see a component for the field's crop history
+***** I see a component for the field's crop & harvest history
 ****** I see a component for the current crop
 ******* I see the crop information
 ******* I see the last harvest
@@ -91,7 +116,7 @@ Tilth Tracker
 ******* I can view a crop entry
 ******** SEE USER STORY for "I see a component for the current crop"
 ******* I can view older crop entries
-*** I can create a new field 
+*** I can create a new field
 **** What is the name of the field?
 **** Where is the field?
 **** What is it's aspect?
