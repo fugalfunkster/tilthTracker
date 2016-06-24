@@ -1,6 +1,6 @@
 Tilth Tracker
 
-* TODO s
+* TODO
 ** [X] Init repo
 ** [ ] Flesh out readme
 ** [ ] Write design Recipe
@@ -19,16 +19,23 @@ Tilth Tracker
 **** I can enable editing past records after being warned
 **** I can enable setting past dates for new records after being warned
 *** I can logout
-*** I see a weather forecast
 *** I see a list of my fields
-**** For each field entry
-***** I see my most recent crop record for each field
-***** I see a link to my most recent record for that field
-***** I see a link to past records for that field
-***** I see a button to enter a record for that field
+**** For each field in the list
+***** When the list of fields is 3 or less
+****** I see the field name
+****** I see the current crop for that field
+****** I see a button to enter a new record for that field
+******* I am prompted with a choice between record types
+****** I see a list of past records for that field
+******* I can click a past record to view it
+***** When the list of fields is 5 or less:
+****** I see the field name
+****** I see the current crop
+****** I see a button to enter a new record for that field
 **** I can click on a particular field
-***** I see a component for the field's soil test & recommendation history
+***** TODO I see a component for the field's soil test & recommendation history
 ****** I can record a soil test
+******* Sample ID
 ******* The date of the soil test is automatically populated
 ******** If my account settings permit it, I can modify the date
 ******* I can enter the nutrient data
@@ -55,19 +62,18 @@ Tilth Tracker
 ********* Mo
 ********* Co
 ******* I can enter other soil test details
-******** Sample ID
-******** Sample Taker
-******** Notes
+******* I can enter recommendations
+******* I can generate recommendations based off of targets
 ****** I can view a log of past tests
 ******* I see a summary of the 5 most recent soil test entries
 ******* I can view a soil test entry
 ******** I can see the numbers
 ******** I can see a graph depicting nutrient sufficiency
 ******** If my acount settings permit it, I can modify test data
-******* I can view older soil test entries
 ******* I can view recommendations
 ******** I can view saved recommendations generated from the test
 ******** I can generate alternate recommendations
+******* I can view older soil test entries
 ***** I see a component for the field's application history
 ****** I can record an application
 ******* The date of the application is automatically populated
@@ -119,27 +125,10 @@ Tilth Tracker
 *** I can create a new field
 **** What is the name of the field?
 **** Where is the field?
-**** What is it's aspect?
 **** Soil test History?
 **** Application History?
 **** Tillage History?
 **** Crop and Yield History
-
-* Labor Estimates [135h]
-
-| Phase              | Hours |
-|--------------------+-------|
-| User Stories       |    10 |
-| Recipe             |    15 |
-| Content Generation |    15 |
-| Business Logic     |    25 |
-| Routing            |    15 |
-| Database Wiring    |    15 |
-| UI Customization   |    25 |
-| Deployment         |    25 |
-|--------------------+-------|
-| Total              |   145 |
-|--------------------+-------|
 
 
 * Design Recipe
@@ -151,6 +140,23 @@ Tilth Tracker
 ** Middleware
 ** Controllers
 ** Server Architecture
+
+
+* Labor Estimates [135h]
+
+| Phase              | Hours | Realized |
+|--------------------+-------+----------|
+| User Stories       |    10 | (+ 4 )   |
+| Recipe             |    15 |          |
+| Content Generation |    15 |          |
+| Business Logic     |    25 |          |
+| Routing            |    15 |          |
+| Database Wiring    |    15 |          |
+| UI Customization   |    25 |          |
+| Deployment         |    25 |          |
+|--------------------+-------+----------|
+| Total              |   145 |          |
+|--------------------+-------+----------|
 
 
 * notes
