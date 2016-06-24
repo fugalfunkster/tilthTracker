@@ -33,13 +33,15 @@ Tilth Tracker
 ****** I see the current crop
 ****** I see a button to enter a new record for that field
 **** I can click on a particular field
-***** TODO I see a component for the field's soil test & recommendation history
-****** I can record a soil test
+***** I see a component for the field's soil test history
+****** I see a summary of the most recent soil test
+******* Date
 ******* Sample ID
-******* The date of the soil test is automatically populated
-******** If my account settings permit it, I can modify the date
-******* I can enter the nutrient data
-******** Organic Matter
+****** I can record a new soil test
+******* Date of Sample
+******* Sample ID
+******* Nutrient data
+******** Organic Matter %
 ******** CEC
 ********* pH
 ********* SMP Buffer pH
@@ -50,8 +52,11 @@ Tilth Tracker
 ********* Na
 ******** Anions
 ********* N
-********* S
+********* S04
 ******** Phosphorous
+********* P2O5
+********* Weak Bray
+********* NaHC03-P
 ******** Trace Nutrients
 ********* B
 ********* Zn
@@ -61,55 +66,106 @@ Tilth Tracker
 ********* Cl
 ********* Mo
 ********* Co
-******* I can enter other soil test details
-******* I can enter recommendations
-******* I can generate recommendations based off of targets
+******* Notes
+******* Recommendations (CROSS MODEL POPULATION)
+******** I must select a unit of measurement, Ex: #/1000 Sq.Ft
+******** Cations
+********* Lime
+********* Ca (Gypsum)
+********* Dolomite
+********* Mg (Epsom Salts)
+********* K2O
+********* Na
+******** Anions
+********* N
+********* SO4
+********* P2O5
+******** Trace Nutrients
+********* B
+********* Zn
+********* Mn
+********* Fe
+********* Cu
+********* Cl
+********* Mo
+********* C
 ****** I can view a log of past tests
-******* I see a summary of the 5 most recent soil test entries
+******* I see a summary of the 5 most recent soil test entries and their recommendations
 ******* I can view a soil test entry
 ******** I can see the numbers
-******** I can see a graph depicting nutrient sufficiency
 ******** If my acount settings permit it, I can modify test data
-******* I can view recommendations
-******** I can view saved recommendations generated from the test
-******** I can generate alternate recommendations
+******** I can generate recommendations based on a soil test
+********* SEE RECOMMENDATIONS FORM
 ******* I can view older soil test entries
+***** I see a component for the field's recommendation history
+****** I see a summary of the most recent recommendation
+******* Date (generated)
+******* Crop
+******* Weight?
+****** I can record a new recommendation
+******* Two ways to get recommendations
+******** From a soil test
+********* Soil test (most recent automatically selected)
+********** Option to enter soil test (LINKED)
+********** Populates soil test ID
+********* By selecting from a list of targets
+********** I first select a soil test from a list of soil tests
+*********** Each test in the list shows
+************ Date (sort by)
+************ Sample ID
+********** Next I select a crop to recieve recommendations for
+*********** From a list of crops grown in this field
+************ sorted by date
+*********** Or I can enter a new crop
+************ *this might be cached and used to prepopulate future crop records
+********** Next I select an author to recieve recommendations from
+*********** organized by region
+*********** organized by date revised
+******** From external recommendations
+****** I can view a log of past recommendations
+******** I can view saved recommendations generated from a test
+******** I can generate alternate recommendations
 ***** I see a component for the field's application history
-****** I can record an application
-******* The date of the application is automatically populated
-******** If my account settings permit it, I can modify the date
+****** I see a summary of the most recent application
+******* Date
+******* Crop?
+******* Weight
+******* Method?
+****** I can record a new application
+******* Date (automatically populated)
 ******* I can enter information about an amendment
-******** I can select from a list of saved amendments
 ******** I can enter a new amendment
 ********* Name
 ********* Weight
 ********* Analysis
+********* As a Farm or Enterprise: $/# 
+******** As a Farm or Enterprise, I can select from a list of saved amendments
 ******* I can enter other application details
-******** Method of Application
-********* Hand
-********* Machine
-******** Duration in Hours for Application
-******** Cost of Application?
-******** Notes
+******** All Users
+********* Notes
+******** Farm and Enterprise Users
+********* Method of Application
+********** Hand
+*********** Labor Hours
+********** Machine
+*********** Machine Hours
+********* Cost of Application?
 ****** I can view a log of past applications
 ******* I see summary of the 5 most recent application entries
 ******* I can inspect an application entry
 ******** If my account settings permit it, I can modify test data
 ******* I can view older application entries
 ***** I see a component for the field's disturbance history
-****** I can record a disturbance
+****** I see a summary of the most recent disturbance
+****** I can record a new disturbance
 ****** I can view a log of past disturbances
-***** I see a component for the field's crop & harvest history
-****** I see a component for the current crop
-******* I see the crop information
-******* I see the last harvest
-******* I can record crop information
-******* I can record a harvest entry
-******* I can view a log of past harvests
-******** I see the last 5 harvests
-******** I can view older harvest entries
-******** I can view a harvest entry
-****** I can record a new crop
+***** I see a component for the field's planting history
+****** I see a summary of the most recent planting
+******* Crop Name
+******* Planting Date
+******* Last Harvest
+******* Total Harvest to Date
+****** I can record a new planting
 ******* I can enter crop information
 ******** Crop Name
 ******** Area
@@ -117,11 +173,55 @@ Tilth Tracker
 ******* For each crop I can 
 ******** Add a harvest
 ********* 
-****** I can view a log of past crops
+****** I can view a log of past plantings
 ******* I see a summary of the 5 most recent crop entries
 ******* I can view a crop entry
 ******** SEE USER STORY for "I see a component for the current crop"
 ******* I can view older crop entries
+***** I see a component for the field's harvest history
+****** I see a summary of the most recent harvest
+****** I can record a new harvest
+******* I must enter the crop name
+******** The current crop is automatically selected
+******** If I try to change the crop, I am prompted to record a new planting
+********* SEE RECORD A NEW PLANTING
+******* I may enter a cultivar name
+******* I must enter the units of yield
+******** The last unit of yield for the crop is automatically selected
+******** If I try to change the units, I am warned that I cannot aggregate this data
+****** I can view a log of past harvests
+******* I see the last 5 harvests
+******* I can view older harvest entries
+******* I can view a harvest entry
+***** * Farms and Enterprises See a widget for agronomic targets
+****** TODO I can enter a new set of agronomic targets
+******* Crop Name
+******* Author Name
+******* Region
+******* Date
+******* For each nutrient, I must select a unit of measurement, Ex: ppm, #/acre, #/1000 sq. ft., pH, etc.
+********** Organic Matter
+********** pH / buffer pH
+********** Cations
+*********** Ca
+*********** Mg
+*********** K2O
+*********** Na
+********** Anions
+*********** N
+*********** SO4
+*********** P2O5
+********** Trace Nutrients
+*********** B
+*********** Zn
+*********** Mn
+*********** Fe
+*********** Cu
+*********** Cl
+*********** Mo
+*********** Co
+****** TODO I can see a list of saved agronomic targets
+***** * I see a component for the field's observation history
 *** I can create a new field
 **** What is the name of the field?
 **** Where is the field?
@@ -144,19 +244,19 @@ Tilth Tracker
 
 * Labor Estimates [135h]
 
-| Phase              | Hours | Realized |
-|--------------------+-------+----------|
-| User Stories       |    10 | (+ 4 )   |
-| Recipe             |    15 |          |
-| Content Generation |    15 |          |
-| Business Logic     |    25 |          |
-| Routing            |    15 |          |
-| Database Wiring    |    15 |          |
-| UI Customization   |    25 |          |
-| Deployment         |    25 |          |
-|--------------------+-------+----------|
-| Total              |   145 |          |
-|--------------------+-------+----------|
+| Phase              | Hours | Realized    |
+|--------------------+-------+-------------|
+| User Stories       |    10 | (+ 4 4)     |
+| Recipe             |    15 |             |
+| Content Generation |    15 |             |
+| Business Logic     |    25 |             |
+| Routing            |    15 |             |
+| Database Wiring    |    15 |             |
+| UI Customization   |    25 |             |
+| Deployment         |    25 |             |
+|--------------------+-------+-------------|
+| Total              |   145 |             |
+|--------------------+-------+-------------|
 
 
 * notes
